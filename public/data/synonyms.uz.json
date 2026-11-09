@@ -1,0 +1,645 @@
+{
+ "accessory nerve": [
+  "qoʻshimcha nerve"
+ ],
+ "adductor hallucis": [
+  "kattabarmoq yopuvchisi",
+  "Kattabarmoq yopuvchisi"
+ ],
+ "adductor pollicis": [
+  "kattabarmoq yopuvchisi",
+  "Kattabarmoq yopuvchisi"
+ ],
+ "adenohypophysis": [
+  "gipofiz olding qismi",
+  "adenogipofiz",
+  "gipofiz"
+ ],
+ "amygdaloid body": [
+  "badamcha",
+  "badamcha tanasi"
+ ],
+ "aorta": [
+  "aorta",
+  "yon qorin arteriyasi"
+ ],
+ "artery": [
+  "arteriya",
+  "tomir"
+ ],
+ "artery of": [
+  "arteriya"
+ ],
+ "ascending colon": [
+  "koʻtariluvchi chekka"
+ ],
+ "atlas": [
+  "atlas",
+  "birinchi boʻyin umurtqasi"
+ ],
+ "axis": [
+  "axis",
+  "ikkinchi boʻyin umurtqasi"
+ ],
+ "basilar artery": [
+  "baza arteriyasi"
+ ],
+ "biceps brachii": [
+  "ikki boshli mushk",
+  "yelkakning ikki boshli mushki",
+  "Yelkakning ikki boshli mushki"
+ ],
+ "biceps femoris": [
+  "sonning ikki boshli mushki",
+  "Sonning ikki boshli mushki"
+ ],
+ "bone": [
+  "suyak"
+ ],
+ "brachial artery": [
+  "yelka arteriyasi"
+ ],
+ "branch": [
+  "tarmoq"
+ ],
+ "bronchus": [
+  "bronx"
+ ],
+ "bursa": [
+  "sumka"
+ ],
+ "capsule": [
+  "kapsula"
+ ],
+ "carotid artery": [
+  "uyush arteriyasi"
+ ],
+ "cartilage": [
+  "toʻgʻay"
+ ],
+ "cerebellum": [
+  "miyachik",
+  "chacha miya",
+  "Miyachik"
+ ],
+ "circumflex artery of heart": [
+  "yurak aylanuvchi arteriyasi"
+ ],
+ "clavicle": [
+  "oʻmrov suyagi"
+ ],
+ "coeliac trunk": [
+  "qorin poyali",
+  "celiac trunk",
+  "chidamli poyal"
+ ],
+ "common carotid artery": [
+  "umumiy uyush arteriyasi",
+  "uyush arteriyasi",
+  "Umumiy uyush arteriyasi"
+ ],
+ "corpus callosum": [
+  "miya tanasi"
+ ],
+ "costal cartilage": [
+  "qovurgʻa togʻayi"
+ ],
+ "deltoid muscle": [
+  "deltoid",
+  "deltoid mushk",
+  "Deltoid mushk"
+ ],
+ "descending colon": [
+  "tushuvchi chekka"
+ ],
+ "diaphragm": [
+  "diafragma",
+  "koʻkrak diafragmasi"
+ ],
+ "disc": [
+  "disk"
+ ],
+ "duct": [
+  "oʻz"
+ ],
+ "duodenum": [
+  "oʻn ikki ichak"
+ ],
+ "eighth rib": [
+  "sakkizinchi qovurgʻa"
+ ],
+ "epiglottis": [
+  "epiglotis",
+  "til ustidagi suyakcha"
+ ],
+ "extensor carpi ulnaris": [
+  "ulnar bilak yozuvchisi",
+  "Ulnar bilak yozuvchisi"
+ ],
+ "facial nerve": [
+  "yuz nerve"
+ ],
+ "fascia": [
+  "fastiya"
+ ],
+ "fasciculus": [
+  "toʻla"
+ ],
+ "femoral artery": [
+  "son arteriyasi"
+ ],
+ "femur": [
+  "son",
+  "son suyagi",
+  "sonning suyagi"
+ ],
+ "fibula": [
+  "peruz suyagi",
+  "kichik oyoq suyagi"
+ ],
+ "first rib": [
+  "birinchi qovurgʻa",
+  "qovurgʻa"
+ ],
+ "flexor carpi ulnaris": [
+  "ulnar bilak bukuvchisi",
+  "Ulnar bilak bukuvchisi"
+ ],
+ "flexor digitorum superficialis": [
+  "yuza barmoqlar bukuvchisi",
+  "Yuza barmoqlar bukuvchisi"
+ ],
+ "flexor hallucis brevis": [
+  "qisqa kattabarmoq bukuvchisi",
+  "Qisqa kattabarmoq bukuvchisi"
+ ],
+ "flexor pollicis brevis": [
+  "qisqa kattabarmoq bukuvchisi",
+  "Qisqa kattabarmoq bukuvchisi"
+ ],
+ "frontal bone": [
+  "peshona suyagi"
+ ],
+ "gallbladder": [
+  "safra xurichi",
+  "safra pufogʻi"
+ ],
+ "gastric artery": [
+  "oshqozon arteriyasi"
+ ],
+ "gastrocnemius muscle": [
+  "ikki boshli koldi mushki",
+  "zaldastak",
+  "koldi",
+  "Ikki boshli koldi mushki"
+ ],
+ "gland": [
+  "bez"
+ ],
+ "glossopharyngeal nerve": [
+  "til-halqasimon nerve"
+ ],
+ "gluteus maximus muscle": [
+  "dum",
+  "dum mushki",
+  "katta yondiruvchi"
+ ],
+ "gluteus medius muscle": [
+  "oʻrta dum mushki"
+ ],
+ "gluteus minimus muscle": [
+  "kichik dum mushki"
+ ],
+ "great saphenous vein": [
+  "katta safena venasi"
+ ],
+ "gyrus": [
+  "burma"
+ ],
+ "hip bone": [
+  "chanoq suyagi"
+ ],
+ "hippocampus": [
+  "togʻ oti",
+  "hipokamp"
+ ],
+ "humerus": [
+  "yelkak suyagi"
+ ],
+ "hyoid bone": [
+  "til osti suyagi"
+ ],
+ "hypoglossal nerve": [
+  "til osti nerve"
+ ],
+ "hypothalamus": [
+  "gipotalamus"
+ ],
+ "iliopectineal bursa": [
+  "Yon-chanoq sumkasi"
+ ],
+ "inferior labial vein": [
+  "Pastki lab venasi"
+ ],
+ "inferior mesenteric artery": [
+  "pastki mezenterial arteriya"
+ ],
+ "inferior vena cava": [
+  "pastki boʻyur venasi"
+ ],
+ "insula": [
+  "orol",
+  "Orol"
+ ],
+ "jejunum": [
+  "boʻsh ichak"
+ ],
+ "joint": [
+  "boʻgʻim"
+ ],
+ "jugular vein": [
+  "boʻyin venasi"
+ ],
+ "kidney": [
+  "buyrak"
+ ],
+ "laryngopharynx": [
+  "boʻyin halqasi",
+  "halqasimon",
+  "pharynx"
+ ],
+ "lateral pterygoid muscle": [
+  "tashqi pterigoid mushk",
+  "Tashqi pterigoid mushk"
+ ],
+ "left atrium": [
+  "chap boʻrincha"
+ ],
+ "left ventricle": [
+  "chap qorincha",
+  "yurak qorinchasi"
+ ],
+ "ligament": [
+  "bogʻich"
+ ],
+ "liver": [
+  "jigar"
+ ],
+ "lobe": [
+  "boʻlak"
+ ],
+ "lobe of": [
+  "boʻlak"
+ ],
+ "lobule": [
+  "boʻlakcha"
+ ],
+ "lung": [
+  "oʻpka",
+  "oʻpkalar"
+ ],
+ "mandible": [
+  "pastki jagʻ"
+ ],
+ "mandibular nerve": [
+  "pastki jagʻ nerve",
+  "Pastki jagʻ nerve"
+ ],
+ "masseter": [
+  "yonoq chogʻuvchi mushk"
+ ],
+ "maxilla": [
+  "yuqori jagʻ"
+ ],
+ "median nerve": [
+  "oʻrta nerve"
+ ],
+ "membrane": [
+  "parda"
+ ],
+ "meniscus": [
+  "menisk"
+ ],
+ "muscle": [
+  "mushk"
+ ],
+ "nasopharynx": [
+  "halqasimon",
+  "burun halqasi"
+ ],
+ "nerve": [
+  "nerve"
+ ],
+ "neurohypophysis": [
+  "gipofiz orqa qismi",
+  "nevrogipofiz",
+  "gipofiz"
+ ],
+ "nodes": [
+  "limfa tuguni",
+  "tugun"
+ ],
+ "nucleus": [
+  "yadro"
+ ],
+ "occipital bone": [
+  "ensa suyagi"
+ ],
+ "oculomotor nerve": [
+  "koʻz harakati nerve"
+ ],
+ "oesophagus": [
+  "qizil boʻyraq",
+  "esophagus",
+  "qizil boʻyrak"
+ ],
+ "olfactory nerve": [
+  "hidlash nerve"
+ ],
+ "opponens digiti minimi muscle of foot": [
+  "Oyoqning kichik barmoqqa qarshi turgizuvchi mushki"
+ ],
+ "optic nerve": [
+  "koʻrish nerve"
+ ],
+ "oropharynx": [
+  "halqasimon",
+  "ogʻiz halqasi"
+ ],
+ "pancreas": [
+  "pankreas"
+ ],
+ "parathyroid gland": [
+  "paratireoid bezi"
+ ],
+ "parietal bone": [
+  "tepa suyagi"
+ ],
+ "parotid gland": [
+  "parotid bez",
+  "quloq ostidagi bez"
+ ],
+ "patella": [
+  "tizza",
+  "tizza suyagi"
+ ],
+ "pectoralis major muscle": [
+  "koʻkrakning katta mushki",
+  "katta koʻkrak mushki",
+  "Koʻkrakning katta mushki"
+ ],
+ "pectoralis minor muscle": [
+  "koʻkrakning kichik mushki"
+ ],
+ "penis": [
+  "olmay"
+ ],
+ "phalanx": [
+  "falanga",
+  "barmoq boʻgʻimi"
+ ],
+ "pleura": [
+  "pleura",
+  "oʻpka parda"
+ ],
+ "plexus": [
+  "toʻplam"
+ ],
+ "popliteal artery": [
+  "tizza orqasi arteriyasi"
+ ],
+ "portal vein": [
+  "jigar darvozasi venasi"
+ ],
+ "pronator teres": [
+  "yassi pronator",
+  "Yassi pronator"
+ ],
+ "prostate": [
+  "prostata",
+  "qoragʻa bezi"
+ ],
+ "pulmonary artery": [
+  "oʻpka arteriyasi"
+ ],
+ "pulmonary trunk": [
+  "oʻpka poyali"
+ ],
+ "quadratus femoris": [
+  "son kvadrat mushki"
+ ],
+ "radial artery": [
+  "radial arteriya"
+ ],
+ "radial nerve": [
+  "radial nerve"
+ ],
+ "radius": [
+  "nur suyagi"
+ ],
+ "renal artery": [
+  "buyrak arteriyasi",
+  "Buyrak arteriyasi"
+ ],
+ "renal pelvis": [
+  "buyrak kosasi"
+ ],
+ "rib": [
+  "qovurgʻa"
+ ],
+ "right atrium": [
+  "oʻng boʻrincha"
+ ],
+ "right ventricle": [
+  "oʻng qorincha",
+  "yurak qorinchasi"
+ ],
+ "sacrum": [
+  "dumgʻaza",
+  "dumgʻaza suyagi"
+ ],
+ "sartorius muscle": [
+  "tikuvchi mushk"
+ ],
+ "scapula": [
+  "kurinka",
+  "yelpak suyagi"
+ ],
+ "sciatic nerve": [
+  "seksika nerve",
+  "dum nerve"
+ ],
+ "septal branches of anterior ethmoidal artery": [
+  "Olding toʻr arteriyasining toʻsiqli tarmoqlari"
+ ],
+ "sigmoid colon": [
+  "sigmoid chekka"
+ ],
+ "small saphenous vein": [
+  "kichik safena venasi"
+ ],
+ "soft palate": [
+  "yumshoq toʻloq"
+ ],
+ "soleus muscle": [
+  "zol mushki"
+ ],
+ "spleen": [
+  "talak"
+ ],
+ "sternocleidomastoid muscle": [
+  "koʻkrak-oʻmrov-dastsimoch mushki"
+ ],
+ "sternum": [
+  "koʻkrak suyagi"
+ ],
+ "stomach": [
+  "oshqozon"
+ ],
+ "sublingual gland": [
+  "til osti bezi"
+ ],
+ "submandibular gland": [
+  "pastki jagʻ bezi"
+ ],
+ "sulcus": [
+  "egiklik"
+ ],
+ "superior mesenteric artery": [
+  "yuqori mezenterial arteriya"
+ ],
+ "superior vena cava": [
+  "yuqori boʻyur venasi",
+  "boʻyur venasi"
+ ],
+ "suprarenal gland": [
+  "ustki buyrak bezi"
+ ],
+ "temporal bone": [
+  "chakka suyagi"
+ ],
+ "temporal fascia": [
+  "Chakka fastiyasi"
+ ],
+ "temporalis muscle": [
+  "chakka mushki"
+ ],
+ "temporomandibular joint": [
+  "Chakka-pastki jagʻ boʻgʻimi"
+ ],
+ "testis": [
+  "moydan",
+  "urushdon"
+ ],
+ "thalamus": [
+  "talamus"
+ ],
+ "thymus": [
+  "timus"
+ ],
+ "thyroid gland": [
+  "qalqon bezi",
+  "qalqon"
+ ],
+ "tibia": [
+  "bigor suyagi",
+  "katta oyoq suyagi"
+ ],
+ "tongue": [
+  "til"
+ ],
+ "tonsil": [
+  "milt"
+ ],
+ "trachea": [
+  "traxeya",
+  "halqasimon nafas yoʻli"
+ ],
+ "tract": [
+  "yoʻl"
+ ],
+ "transverse colon": [
+  "koʻndalang chekka"
+ ],
+ "trapezius muscle": [
+  "trapetsiya mushk",
+  "Trapetsiya mushk"
+ ],
+ "triceps brachii": [
+  "uch boshli mushk",
+  "yelkakning uch boshli mushki",
+  "Yelkakning uch boshli mushki"
+ ],
+ "trigeminal nerve": [
+  "uch tarmoqli nerve",
+  "burchak nerve"
+ ],
+ "trochlear nerve": [
+  "nakka tortuvchi nerve"
+ ],
+ "twelfth rib": [
+  "oʻn ikkinchi qovurgʻa"
+ ],
+ "ulna": [
+  "yon suyagi",
+  "boʻshak suyagi"
+ ],
+ "ulnar artery": [
+  "ulnar arteriya"
+ ],
+ "ulnar nerve": [
+  "ulnar nerve"
+ ],
+ "ulnar recurrent artery": [
+  "Ulnar qaytuvchi arteriyasi"
+ ],
+ "ureter": [
+  "siydik yoʻli"
+ ],
+ "urethra": [
+  "siydik kanali"
+ ],
+ "urinary bladder": [
+  "siydik pufogi"
+ ],
+ "vagus nerve": [
+  "adolatish nervi",
+  "sayfaralash nervi"
+ ],
+ "valve": [
+  "klapan"
+ ],
+ "vein": [
+  "vena",
+  "qon tomiri"
+ ],
+ "vein of": [
+  "vena"
+ ],
+ "vermiform appendix": [
+  "ilakcha"
+ ],
+ "vermis": [
+  "chuquq",
+  "Chuquq"
+ ],
+ "vertebra": [
+  "umurtqa"
+ ],
+ "vertebra c3": [
+  "boʻyin umurtqasi",
+  "umurtqa"
+ ],
+ "vertebra l1": [
+  "bel umurtqasi"
+ ],
+ "vertebra t1": [
+  "koʻkrak umurtqasi"
+ ],
+ "vertebral artery": [
+  "umurtqa arteriyasi"
+ ],
+ "vestibulocochlear nerve": [
+  "vestibular-koxlear nerve"
+ ]
+}

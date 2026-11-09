@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# Heavy binary assets: Blender sources, their .blend1 autosaves and the
+# downloaded Z-Anatomy archives. Moved out of public/ into assets-src/ so Vite
+# never copies ~900 MB into a production build. They are still needed offline to
+# generate the anatomical lexicon, so they are ignored, not deleted.
+# Revisit with Git LFS if they ever need to be versioned or mirrored.
+assets-src/
+*.blend
+*.blend1
+*.zip
+
+# Local AI-agent context, not meant for a public repo
+CLAUDE.md
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
