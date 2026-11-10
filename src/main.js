@@ -4,12 +4,12 @@ import { createScene } from './viewer/createScene.js';
 import { loadSystems } from './viewer/loadModel.js';
 import { initSelection } from './viewer/selection.js';
 import { initUI } from './ui/sidebar.js';
-import { setViewer, setPartsData, setSystemsData, subscribe } from './state/store.js';
+import { setViewer, setPartsData, setSystemsData, setRegionsData, subscribe } from './state/store.js';
 import { readState, storedState, applyState, scheduleStateWrite } from './state/urlState.js';
 import { loadModel } from './viewer/loadModel.js';
 import { selectPartById } from './viewer/selection.js';
 import { showPart, hidePart, setPartTransparency, isolatePart } from './viewer/visibility.js';
-import { loadSystemsData, loadLexicon, loadTerms, loadDefinitions, buildPartsData, DEFAULT_SYSTEM } from './data/anatomy.js';
+import { loadSystemsData, loadLexicon, loadTerms, loadRegionsData, loadDefinitions, buildPartsData, DEFAULT_SYSTEM } from './data/anatomy.js';
 import { buildSearchIndex } from './utils/dataLoader.js';
 
 let viewer;
@@ -31,17 +31,19 @@ async function init() {
   const loadingOverlay = document.getElementById('loadingOverlay');
 
   try {
-    const [systemsData, lexicon, terms] = await Promise.all([
+    const [systemsData, lexicon, terms, regionsData] = await Promise.all([
       loadSystemsData(),
       loadLexicon(),
-      loadTerms()
+      loadTerms(),
+      loadRegionsData()
     ]);
     setSystemsData(systemsData);
+    setRegionsData(regionsData);
 
     // Definitions are big; start them now and let them land whenever.
     loadDefinitions();
 
-    const partsData = buildPartsData(systemsData, lexicon, terms);
+    const partsData = buildPartsData(systemsData, lexicon, terms, regionsData);
     setPartsData(partsData);
     // The search index is built here so the box answers before the
     // dictionaries and the synonyms have arrived; loadAllData() rebuilds it

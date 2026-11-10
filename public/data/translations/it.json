@@ -104,6 +104,7 @@
   "controls_title": "Comandi",
   "loading_definition": "Caricamento definizione...",
   "no_definition": "Nessuna definizione disponibile per questa struttura.",
+  "definition_untranslated": "Non tradotto",
   "read_more": "Approfondisci su Wikipedia",
   "non_official": "non ufficiale",
   "non_official_hint": "Termine non incluso nella Terminologia Anatomica",
@@ -116,5 +117,8 @@
   "credits_wikipedia": "definizioni delle strutture, CC BY-SA 3.0 e GFDL",
   "credits_dundee_cranial": "University of Dundee, CAHID: nervi cranici e forami, CC BY 4.0",
   "credits_dundee_ear": "University of Dundee: orecchio interno, CC BY-NC-SA 4.0",
-  "credits_kidney": "lissiecowley: rene, CC BY-NC 4.0"
+  "credits_kidney": "lissiecowley: rene, CC BY-NC 4.0",
+  "region_pelvis": "Bacino",
+  "region_other": "Altro",
+  "region_back": "Dorso"
 }

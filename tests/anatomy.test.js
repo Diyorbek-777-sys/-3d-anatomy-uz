@@ -58,6 +58,17 @@ describe('buildPartsData', () => {
     expect(parts['Femur.l'].official).toBe(true);
   });
 
+  it('attaches each body region to the base name on both sides', () => {
+    const parts = buildPartsData(systems, {}, {}, {
+      lower_limb: ['Femur'],
+      thorax: ['Body of sternum']
+    });
+    expect(parts['Femur.l'].region).toBe('lower_limb');
+    expect(parts['Femur.r'].region).toBe('lower_limb');
+    expect(parts['Body of sternum'].region).toBe('thorax');
+    expect(parts['(Adductor minimus).l'].region).toBeNull();
+  });
+
   it('survives an empty lexicon', () => {
     const parts = buildPartsData(systems);
     expect(parts['Femur.l'].latinName).toBe('');

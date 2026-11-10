@@ -1513,6 +1513,20 @@ body {
   text-decoration: underline;
 }
 
+/* The definition is shown in English because it has not been translated yet. */
+.definition-badge {
+  display: inline-block;
+  margin-inline-start: 8px;
+  padding: 2px 7px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-2, transparent);
+  color: var(--fg-muted);
+  font-size: 11px;
+  line-height: 1.6;
+  vertical-align: middle;
+}
+
 .structure-relations {
   display: flex;
   flex-direction: column;

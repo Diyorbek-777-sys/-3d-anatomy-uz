@@ -80,8 +80,8 @@
   "region_neck": "Boʻyin",
   "region_thorax": "Koʻkrak",
   "region_abdomen": "Qorin",
-  "region_upper_limb": "Yuqori limf",
-  "region_lower_limb": "Quyi limf",
+  "region_upper_limb": "Yuqori qoʻl",
+  "region_lower_limb": "Pastki oyoq",
   "no_results": "Natija topilmadi",
   "retry": "Qayta urinish",
   "depth": "Chuqurlik",
@@ -104,6 +104,7 @@
   "controls_title": "Boshqaruv",
   "loading_definition": "Taʼrif yuklanmoqda...",
   "no_definition": "Bu tuzilma uchun taʼrif mavjud emas.",
+  "definition_untranslated": "Tarjima qilinmagan",
   "read_more": "Vikipediyada batafsil oʻqish",
   "non_official": "rasmiy emas",
   "non_official_hint": "Terminologia Anatomica tarkibiga kirmagan atama",
@@ -116,5 +117,8 @@
   "credits_wikipedia": "tuzilma taʼriflari, CC BY-SA 3.0 va GFDL",
   "credits_dundee_cranial": "University of Dundee, CAHID: bosh miyalari va teshiklari, CC BY 4.0",
   "credits_dundee_ear": "University of Dundee: ichki quloq, CC BY-NC-SA 4.0",
-  "credits_kidney": "lissiecowley: buyrak, CC BY-NC 4.0"
+  "credits_kidney": "lissiecowley: buyrak, CC BY-NC 4.0",
+  "region_pelvis": "Chanoq",
+  "region_other": "Boshqa",
+  "region_back": "Orqa"
 }

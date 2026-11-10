@@ -50,7 +50,6 @@ if (!termFiles.length) {
 }
 
 for (const file of termFiles) {
-  const lang = file.replace(/^terms\./, '').replace(/\.json$/, '');
   const terms = JSON.parse(await readFile(path.join(DATA_DIR, file), 'utf8'));
 
   // 1 + 2: coverage both ways.
@@ -147,6 +146,62 @@ for (const file of synonymFiles) {
 
   console.log(`${file}: ${Object.keys(synonyms).length} keys`);
 }
+
+// --- the definition banks -----------------------------------------------
+//
+// A definition is shown in the callout; every structure that has one in
+// English must have one in the language too, or the reader is shown English
+// without being told.
+
+const definitionFiles = (await readdir(DATA_DIR)).filter(name => /^definitions\..+\.json$/.test(name));
+
+for (const file of definitionFiles) {
+  const lang = file.replace(/^definitions\./, '').replace(/\.json$/, '');
+  const dictionary = JSON.parse(await readFile(path.join(DATA_DIR, file), 'utf8'));
+  const terms = JSON.parse(await readFile(path.join(DATA_DIR, `terms.${lang}.json`), 'utf8'));
+
+  for (const [key, value] of Object.entries(dictionary)) {
+    if (typeof value !== 'string' || !value.trim()) {
+      fail(file, `"${key}" has no definition`);
+      continue;
+    }
+
+    if (/[Ѐ-ӿ]/.test(value)) {
+      fail(file, `"${key}" contains Cyrillic: "${value}"`);
+    }
+    if (lang === 'uz') {
+      if (value.includes("'")) {
+        fail(file, `"${key}" uses the ASCII apostrophe; the orthography uses ʻ (U+02BB): "${value}"`);
+      }
+      if (/[şŞçÇ]/.test(value)) {
+        fail(file, `"${key}" uses Ş or Ç, which the alphabet adopted on 22 April 2027 replaces: "${value}"`);
+      }
+      // The definition opens with the name the reader sees.
+      const name = terms[key];
+      if (name && !value.startsWith(name)) {
+        fail(file, `"${key}" does not start with its name "${name}": "${value}"`);
+      }
+    }
+  }
+
+  console.log(`${file}: ${Object.keys(dictionary).length} definitions`);
+}
+
+// --- the body-region map -------------------------------------------------
+const regions = JSON.parse(await readFile(path.join(DATA_DIR, 'regions.json'), 'utf8'));
+const regionBases = Object.entries(regions).flatMap(([region, bases]) => {
+  if (!Array.isArray(bases) || !bases.length) fail('regions.json', `"${region}" is empty or invalid`);
+  return bases;
+});
+const regionCounts = new Map();
+regionBases.forEach(base => regionCounts.set(base, (regionCounts.get(base) || 0) + 1));
+const missingRegions = [...allBases].filter(base => !regionCounts.has(base));
+const duplicateRegions = [...regionCounts].filter(([, count]) => count !== 1).map(([base]) => base);
+const orphanRegions = [...regionCounts.keys()].filter(base => !allBases.has(base));
+if (missingRegions.length) fail('regions.json', `${missingRegions.length} structures have no region`);
+if (duplicateRegions.length) fail('regions.json', `${duplicateRegions.length} structures occur in multiple regions`);
+if (orphanRegions.length) fail('regions.json', `${orphanRegions.length} region entries have no structure`);
+console.log(`regions.json: ${regionBases.length} structure assignments across ${Object.keys(regions).length} regions`);
 
 // --- the models ---------------------------------------------------------
 const modelFiles = (await readdir(MODELS_DIR)).filter(name => name.endsWith('.glb'));

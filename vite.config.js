@@ -13,7 +13,6 @@ export default defineConfig(({ command }) => ({
   },
   server: {
     port: 3000,
-    open: true,
     // The dev server is reached through a preview proxy whose host name is
     // assigned by the environment, so it cannot be listed ahead of time.
     // The check only applies to the dev server; the build is a static site

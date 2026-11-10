@@ -65,6 +65,15 @@ export function formatPartName(meshName, lang = DEFAULT_LANG, terms = null) {
   return `${label} (${sideLabel})`;
 }
 
+export async function loadRegionsData() {
+  try {
+    const response = await fetch(asset('data/regions.json'));
+    return response.ok ? await response.json() : {};
+  } catch {
+    return {};
+  }
+}
+
 export async function loadSystemsData() {
   const response = await fetch(asset('data/systems.json'));
   if (!response.ok) {
@@ -105,21 +114,38 @@ export async function loadTerms() {
 
 // Definitions are an order of magnitude larger than the rest of the data, so
 // they are fetched once in the background rather than blocking the first frame.
-let definitionsPromise = null;
+// Each language has its own file; the English one is the fallback, because
+// the English text is the one every structure has.
+const definitionsCache = new Map();
 
-export function loadDefinitions() {
-  if (!definitionsPromise) {
-    definitionsPromise = fetch(asset('data/definitions.json'))
-      .then(response => (response.ok ? response.json() : {}))
-      .catch(() => ({}));
+export function loadDefinitions(lang = DEFAULT_LANG) {
+  if (!definitionsCache.has(lang)) {
+    const request = fetch(asset(`data/definitions.${lang}.json`))
+      .then(response => (response.ok ? response.json() : null))
+      .catch(() => null)
+      .then(async (dictionary) => {
+        if (dictionary) return { dictionary, translated: true };
+        // No file for this language: fall back to the English text.
+        const fallback = await fetch(asset('data/definitions.json'))
+          .then(response => (response.ok ? response.json() : {}))
+          .catch(() => ({}));
+        return { dictionary: fallback, translated: false };
+      });
+
+    definitionsCache.set(lang, request);
   }
-  return definitionsPromise;
+
+  return definitionsCache.get(lang);
 }
 
 // Builds the part dictionary the store expects, keyed by mesh name because that
 // is what loadModel.js registers as partId.
-export function buildPartsData(systemsData, lexicon = {}, termsByLang = {}) {
+export function buildPartsData(systemsData, lexicon = {}, termsByLang = {}, regionsData = {}) {
   const parts = {};
+  const regionByBase = new Map();
+  Object.entries(regionsData).forEach(([region, names]) => {
+    names.forEach(base => regionByBase.set(base, region));
+  });
 
   Object.entries(systemsData).forEach(([systemId, meshNames]) => {
     meshNames.forEach(meshName => {
@@ -145,6 +171,7 @@ export function buildPartsData(systemsData, lexicon = {}, termsByLang = {}) {
         baseName: base,
         side,
         system: systemId,
+        region: regionByBase.get(base) || null,
         latinName: entry.la || '',
         // Z-Anatomy parenthesises names that are not in Terminologia Anatomica.
         official: entry.official !== false

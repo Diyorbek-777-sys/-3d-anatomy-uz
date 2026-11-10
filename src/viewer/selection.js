@@ -334,6 +334,7 @@ function showInfoPanel(partData) {
         <div class="structure-tags">
           <span class="structure-system">${escapeHtml(systemLabel)}</span>
           ${sideKey ? `<span class="structure-tag">${escapeHtml(translate(sideKey, lang))}</span>` : ''}
+          ${info.region ? `<span class="structure-tag structure-region">${escapeHtml(translate(`region_${info.region}`, lang))}</span>` : ''}
           ${info.official === false ? `<span class="structure-tag warn" title="${escapeHtml(translate('non_official_hint', lang))}">${escapeHtml(translate('non_official', lang))}</span>` : ''}
         </div>
       </div>
@@ -390,14 +391,14 @@ function relationMarkup(partId, lang) {
 // Definitions arrive from a separate file that is still downloading on a cold
 // start, so the panel renders first and fills in when the text is available.
 async function fillDefinition(partData, lang) {
-  const definitions = await loadDefinitions();
+  const { dictionary, translated } = await loadDefinitions(lang);
   const target = document.querySelector('#structureInfo [data-definition]');
 
   // The user may have selected something else in the meantime.
-  if (!target || state.selectedPart?.id !== partData.id) return;
+  if (!target || state.selectedPart?.id !== partData.id || state.language !== lang) return;
 
   const base = partData.info?.baseName || partData.id;
-  const text = definitions[base];
+  const text = dictionary[base];
 
   if (!text) {
     target.classList.add('is-empty');
@@ -405,12 +406,26 @@ async function fillDefinition(partData, lang) {
     return;
   }
 
+  // The text is in English because this language has no definition file (or
+  // this structure has no translation yet); say so rather than pretending.
+  const badge = translated ? '' : `<span class="definition-badge">${escapeHtml(translate('definition_untranslated', lang))}</span>`;
+
   target.classList.remove('is-empty');
   target.innerHTML = `
     ${escapeHtml(text)}
-    <a class="definition-source" href="https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(base)}"
+    ${badge}
+    <a class="definition-source" href="${definitionUrl(base, lang, partData)}"
        target="_blank" rel="noopener">${escapeHtml(translate('read_more', lang))}</a>
   `;
+}
+
+// The Wikipedia to send the reader to is the one in the language they are
+// reading in; the search page is used because most fine-grained structures
+// have no article of their own.
+function definitionUrl(base, lang, partData) {
+  const wiki = lang === 'uz' ? 'uz.wikipedia.org' : 'en.wikipedia.org';
+  const query = lang === 'uz' ? (partData.info?.label?.uz || base) : base;
+  return `https://${wiki}/wiki/Special:Search?search=${encodeURIComponent(query)}`;
 }
 
 function hideInfoPanel() {

@@ -86,8 +86,8 @@ export const translationsUz = {
   "region_neck": "Boʻyin",
   "region_thorax": "Koʻkrak",
   "region_abdomen": "Qorin",
-  "region_upper_limb": "Yuqori limf",
-  "region_lower_limb": "Quyi limf",
+  "region_upper_limb": "Yuqori qoʻl",
+  "region_lower_limb": "Pastki oyoq",
   "no_results": "Natija topilmadi",
   "retry": "Qayta urinish",
   "depth": "Chuqurlik",
@@ -110,6 +110,7 @@ export const translationsUz = {
   "controls_title": "Boshqaruv",
   "loading_definition": "Taʼrif yuklanmoqda...",
   "no_definition": "Bu tuzilma uchun taʼrif mavjud emas.",
+  "definition_untranslated": "Tarjima qilinmagan",
   "read_more": "Vikipediyada batafsil oʻqish",
   "non_official": "rasmiy emas",
   "non_official_hint": "Terminologia Anatomica tarkibiga kirmagan atama",
@@ -122,7 +123,10 @@ export const translationsUz = {
   "credits_wikipedia": "tuzilma taʼriflari, CC BY-SA 3.0 va GFDL",
   "credits_dundee_cranial": "University of Dundee, CAHID: bosh miyalari va teshiklari, CC BY 4.0",
   "credits_dundee_ear": "University of Dundee: ichki quloq, CC BY-NC-SA 4.0",
-  "credits_kidney": "lissiecowley: buyrak, CC BY-NC 4.0"
+  "credits_kidney": "lissiecowley: buyrak, CC BY-NC 4.0",
+  "region_pelvis": "Chanoq",
+  "region_other": "Boshqa",
+  "region_back": "Orqa"
 };
 
 export const translationsEn = {
@@ -231,6 +235,7 @@ export const translationsEn = {
   "controls_title": "Controls",
   "loading_definition": "Loading definition...",
   "no_definition": "No definition available for this structure.",
+  "definition_untranslated": "Not translated",
   "read_more": "Read more on Wikipedia",
   "non_official": "non-official",
   "non_official_hint": "Term not in Terminologia Anatomica",
@@ -243,7 +248,10 @@ export const translationsEn = {
   "credits_wikipedia": "structure definitions, CC BY-SA 3.0 and GFDL",
   "credits_dundee_cranial": "University of Dundee, CAHID: cranial nerves and foramina, CC BY 4.0",
   "credits_dundee_ear": "University of Dundee: inner ear, CC BY-NC-SA 4.0",
-  "credits_kidney": "lissiecowley: kidney, CC BY-NC 4.0"
+  "credits_kidney": "lissiecowley: kidney, CC BY-NC 4.0",
+  "region_pelvis": "Pelvis",
+  "region_other": "Other",
+  "region_back": "Back"
 };
 
 export const translationsIt = {
@@ -352,6 +360,7 @@ export const translationsIt = {
   "controls_title": "Comandi",
   "loading_definition": "Caricamento definizione...",
   "no_definition": "Nessuna definizione disponibile per questa struttura.",
+  "definition_untranslated": "Non tradotto",
   "read_more": "Approfondisci su Wikipedia",
   "non_official": "non ufficiale",
   "non_official_hint": "Termine non incluso nella Terminologia Anatomica",
@@ -364,7 +373,10 @@ export const translationsIt = {
   "credits_wikipedia": "definizioni delle strutture, CC BY-SA 3.0 e GFDL",
   "credits_dundee_cranial": "University of Dundee, CAHID: nervi cranici e forami, CC BY 4.0",
   "credits_dundee_ear": "University of Dundee: orecchio interno, CC BY-NC-SA 4.0",
-  "credits_kidney": "lissiecowley: rene, CC BY-NC 4.0"
+  "credits_kidney": "lissiecowley: rene, CC BY-NC 4.0",
+  "region_pelvis": "Bacino",
+  "region_other": "Altro",
+  "region_back": "Dorso"
 };
 
 // Every language the atlas ships, keyed by code. The store seeds itself with

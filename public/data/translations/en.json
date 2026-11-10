@@ -104,6 +104,7 @@
   "controls_title": "Controls",
   "loading_definition": "Loading definition...",
   "no_definition": "No definition available for this structure.",
+  "definition_untranslated": "Not translated",
   "read_more": "Read more on Wikipedia",
   "non_official": "non-official",
   "non_official_hint": "Term not in Terminologia Anatomica",
@@ -116,5 +117,8 @@
   "credits_wikipedia": "structure definitions, CC BY-SA 3.0 and GFDL",
   "credits_dundee_cranial": "University of Dundee, CAHID: cranial nerves and foramina, CC BY 4.0",
   "credits_dundee_ear": "University of Dundee: inner ear, CC BY-NC-SA 4.0",
-  "credits_kidney": "lissiecowley: kidney, CC BY-NC 4.0"
+  "credits_kidney": "lissiecowley: kidney, CC BY-NC 4.0",
+  "region_pelvis": "Pelvis",
+  "region_other": "Other",
+  "region_back": "Back"
 }

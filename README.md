@@ -1,3 +1,27 @@
+> **Oʻzbekcha atlas.** Bu brauzerda ishlaydigan 3D inson anatomiyasi atlasi 7 ta tizimdagi 2 827 tuzilmani oʻrganish imkonini beradi.
+
+# 3D Inson anatomiyasi atlasi
+
+Loyiha Z-Anatomy maʼlumotlariga asoslangan interaktiv 3D atlasdir. Unda 7 ta GLB model, 1 643 ta noyob anatomik nom, oʻzbekcha interfeys, atamalar, qidiruv sinonimlari va taʼriflar mavjud. Inglizcha va italyancha interfeyslar ham saqlangan. Oʻzbekcha nomlar amaldagi lotin imlosida yoziladi; qidiruv yangi imlo variantlarini ham taniydi.
+
+## Ishga tushirish
+
+Node.js 22.12 yoki undan yangi versiya kerak (`.nvmrc` ga qarang).
+
+```bash
+npm ci        # Draco dekoderini public/draco/ ichiga nusxalaydi
+npm run dev   # http://localhost:3000
+npm test      # Vitest testlari
+npm run lint  # ESLint
+npm run build # dist/ ichiga yigʻadi
+```
+
+Atamalar va hosila maʼlumotlarni qayta yaratish yoʻriqnomasi [`tools/terms/README.md`](tools/terms/README.md) da. 3D modellar, `za_name` identifikatorlari va mavjud oʻzaro taʼsirlar oʻzgarishsiz saqlanadi. Litsenziya va manbalar uchun `LICENSE` hamda `NOTICE` fayllariga qarang.
+
+---
+
+# English documentation
+
 > **Featured project.** A browser-based 3D atlas that makes more than 2,800 anatomical structures explorable without installing specialist software.
 
 # 3D Anatomy
